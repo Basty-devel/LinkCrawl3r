@@ -14,7 +14,7 @@ fi
 # Check if hakrawler is installed
 if ! command 'go run hakrawler.go -v' &> /dev/null; then
     echo "Hakrawler is not installed. Please install it following the instructions for your system."
-	echo "git clone https://github.com/hakluke/hakrawler
+    echo "git clone https://github.com/hakluke/hakrawler
 cd hakrawler
 sudo docker build -t hakluke/hakrawler"
     exit 1
