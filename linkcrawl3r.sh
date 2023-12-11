@@ -6,13 +6,13 @@
 # For educational purpose and scoped pentesting only!
 
 # Check if sublist3r is installed
-if ! command -v sublist3r &> /dev/null; then
+if ! command 'python3 sublist3r.py -v' &> /dev/null; then
     echo "Sublist3r is not installed. Please install it using 'sudo apt install sublist3r'."
     exit 1
 fi
 
 # Check if hakrawler is installed
-if ! command -v hakrawler &> /dev/null; then
+if ! command 'go run hakrawler.go -v' &> /dev/null; then
     echo "Hakrawler is not installed. Please install it following the instructions for your system."
 	echo "git clone https://github.com/hakluke/hakrawler
 cd hakrawler
@@ -21,12 +21,13 @@ sudo docker build -t hakluke/hakrawler"
 fi
 
 # User Input
+read -p "What's Your Username on Your Linux/Debian(Kali/Parrot/Ubuntu/etc. ...): " User
 read -p "Enter the target domain or IP address: " target_domain
-read -p "Enter the absolute path to the output file: " output_file_path
+read -p "Enter the output filename: " output_filename
 
 # Subdomain Enumeration
 echo "Running sublist3r for subdomain enumeration..."
-subdomains=$(python3 sublist3r.py -d $target_domain -v -b -p 21,22,53,80,443 -o $output_file_path)
+subdomains=$(python3 sublist3r.py -d $target_domain -v -b -p 21,22,53,80,443 -o /home/$User/Desktop/$output_filename)
 
 # Subdomain Scanning
 declare -a subdomains2
@@ -42,7 +43,7 @@ echo "${subdomains[@]}" > subdomains.txt
 echo "Results saved to subdomains.txt."
 echo "Happy Testing!"
 
-# defining arrays to store subs+paxloads and payloads
+# defining arrays to store subs+payloads and payloads
 declare -a payloads=(/home/$User/Desktop/x55.txt)  
 declare -a url_p
 
@@ -54,9 +55,10 @@ for payload in "${payloads[@]}"; do
 done
 
 # Print results
-echo "Results with payloads:"
+echo "urls with payloads ... "
 for element in "${url_p[@]}"; do
-    echo $element > url_pay.txt
+    echo $element >> /home/$User/Desktop/url_pay.txt
+    echo " ... are safed to /home/$User/Desktop/url_pay.txt"
 done
 
 echo """
